@@ -1,0 +1,850 @@
+Date and  Time:
+[05/13/22]seed@VM:~$ date
+2022年 05月 13日 星期五 04:55:09 EDT
+--------------------------------------------------------------------------------
+os version:
+[05/13/22]seed@VM:/etc$ cat /etc/issue
+Ubuntu 20.04.1 LTS \n \l
+Kernel:
+[05/13/22]seed@VM:/etc$ uname -a
+Linux VM 5.4.0-54-generic #60-Ubuntu SMP Fri Nov 6 10:37:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+---------------------------------------------------------------------------------------------------------------------------
+hardware information:
+[05/13/22]seed@VM:/etc$ cat /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
+stepping	: 10
+cpu MHz		: 1992.002
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt xsave avx rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti fsgsbase avx2 invpcid rdseed clflushopt md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds
+bogomips	: 3984.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
+stepping	: 10
+cpu MHz		: 1992.002
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 2
+core id		: 1
+cpu cores	: 2
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt xsave avx rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti fsgsbase avx2 invpcid rdseed clflushopt md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds
+bogomips	: 3984.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+[05/13/22]seed@VM:/etc$  cat /proc/meminfo
+MemTotal:        2035284 kB
+MemFree:          271788 kB
+MemAvailable:    1077304 kB
+Buffers:          110408 kB
+Cached:           767680 kB
+SwapCached:            0 kB
+Active:          1007344 kB
+Inactive:         484612 kB
+Active(anon):     611088 kB
+Inactive(anon):     1332 kB
+Active(file):     396256 kB
+Inactive(file):   483280 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       2097148 kB
+SwapFree:        2097148 kB
+Dirty:               344 kB
+Writeback:             0 kB
+AnonPages:        613916 kB
+Mapped:           339956 kB
+Shmem:              2260 kB
+KReclaimable:     113840 kB
+Slab:             190052 kB
+SReclaimable:     113840 kB
+SUnreclaim:        76212 kB
+KernelStack:        7104 kB
+PageTables:        12300 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     3114788 kB
+Committed_AS:    3719032 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       32812 kB
+VmallocChunk:          0 kB
+Percpu:             1520 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      198592 kB
+DirectMap2M:     1898496 kB
+-------------------------------------------------------------------
+uptime:
+[05/13/22]seed@VM:/etc$  uptime
+ 05:05:52 up 13 min,  1 user,  load average: 0.33, 0.37, 0.46
+---------------------------------------------------------------------
+service information:
+[05/13/22]seed@VM:/etc$ service --status-all
+ [ + ]  acpid
+ [ - ]  alsa-utils
+ [ - ]  anacron
+ [ + ]  apparmor
+ [ + ]  apport
+ [ + ]  avahi-daemon
+ [ + ]  binfmt-support
+ [ - ]  bluetooth
+ [ - ]  cgroupfs-mount
+ [ - ]  console-setup.sh
+ [ + ]  cron
+ [ + ]  cups
+ [ + ]  cups-browsed
+ [ + ]  dbus
+ [ + ]  gdm3
+ [ + ]  grub-common
+ [ - ]  hwclock.sh
+ [ + ]  irqbalance
+ [ + ]  kerneloops
+ [ - ]  keyboard-setup.sh
+ [ + ]  kmod
+ [ + ]  network-manager
+ [ - ]  open-vm-tools
+ [ + ]  openbsd-inetd
+ [ + ]  openvpn
+ [ - ]  plymouth
+ [ - ]  plymouth-log
+ [ - ]  pppd-dns
+ [ + ]  procps
+ [ - ]  pulseaudio-enable-autospawn
+ [ + ]  resolvconf
+ [ - ]  rsync
+ [ + ]  rsyslog
+ [ - ]  saned
+ [ + ]  sendmail
+ [ - ]  speech-dispatcher
+ [ - ]  spice-vdagent
+ [ + ]  ssh
+ [ + ]  ubuntu-fan
+ [ + ]  udev
+ [ + ]  ufw
+ [ + ]  unattended-upgrades
+ [ - ]  uuidd
+ [ + ]  virtualbox-guest-utils
+ [ + ]  vsftpd
+ [ - ]  whoopsie
+ [ - ]  x11-common
+------------------------------------------------------------
+nic information:
+[05/13/22]seed@VM:/etc$ ifconfig -a
+docker0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 172.17.0.1  netmask 255.255.0.0  broadcast 172.17.255.255
+        ether 02:42:3a:b8:65:88  txqueuelen 0  (以太网)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.4  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::5d50:2449:3e5b:1abe  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:a2:61:25  txqueuelen 1000  (以太网)
+        RX packets 278  bytes 97322 (97.3 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 379  bytes 53172 (53.1 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (本地环回)
+        RX packets 209  bytes 17131 (17.1 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 209  bytes 17131 (17.1 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+--------------------------------------------------------------------------------------------------
+route information:
+[05/13/22]seed@VM:/etc$ netstat -rn
+内核 IP 路由表
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+0.0.0.0             10.0.2.1           0.0.0.0              UG          0 0                  0 enp0s3
+10.0.2.0           0.0.0.0             255.255.255.0   U            0 0                 0 enp0s3
+169.254.0.0     0.0.0.0             255.255.0.0       U            0 0                 0 enp0s3
+172.17.0.0      0.0.0.0              255.255.0.0       U            0 0                 0 docker0
+-------------------------------------------------------------------------------------------
+arp information:
+[05/13/22]seed@VM:/etc$ arp -a
+_gateway (10.0.2.1) at 52:54:00:12:35:00 [ether] on enp0s3
+? (10.0.2.3) at 08:00:27:1a:8f:e7 [ether] on enp0s3
+--------------------------------------------------------------------------------------------------
+information of processes：
+[05/13/22]seed@VM:/etc$ ps auxwwem
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1        0.1      0.5 170088 11816 ?          -         04:52    0:03  /sbin/init splash
+root           -         0.1       -              -        - -            Ss      04:52    0:03 -
+root           2        0.0      0.0           0         0 ?          -         04:52    0:00 [kthreadd]
+root           -         0.0       -              -        - -            S        04:52    0:00 -
+root           3        0.0      0.0            0        0 ?           -        04:52    0:00 [rcu_gp]
+root           -         0.0       -              -        - -            I<      04:52     0:00 -
+root           4        0.0      0.0            0     0 ?              -        04:52     0:00 [rcu_par_gp]
+root           -         0.0    -      -     - -        I<   04:52   0:00 -
+root           6  0.0  0.0      0     0 ?        -    04:52   0:00 [kworker/0:0H-kblockd]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root           9  0.0  0.0      0     0 ?        -    04:52   0:00 [mm_percpu_wq]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root          10  0.0  0.0      0     0 ?        -    04:52   0:00 [ksoftirqd/0]
+root           -  0.0    -      -     - -        S    04:52   0:00 -
+root          11  0.0  0.0      0     0 ?        -    04:52   0:00 [rcu_sched]
+root           -  0.0    -      -     - -        I    04:52   0:00 -
+root          12  0.0  0.0      0     0 ?        -    04:52   0:00 [migration/0]
+root           -  0.0    -      -     - -        S    04:52   0:00 -
+root          13  0.0  0.0      0     0 ?        -    04:52   0:00 [idle_inject/0]
+root           -  0.0    -      -     - -        S    04:52   0:00 -
+root          14  0.0  0.0      0     0 ?        -    04:52   0:00 [cpuhp/0]
+root           -  0.0    -      -     - -        S    04:52   0:00 -
+root          15  0.0  0.0      0     0 ?        -    04:52   0:00 [cpuhp/1]
+root           -  0.0    -      -     - -        S    04:52   0:00 -
+root          16  0.0  0.0      0     0 ?        -    04:52   0:00 [idle_inject/1]
+root           -  0.0    -      -     - -        S    04:52   0:00 -
+root          17  0.0  0.0      0     0 ?        -    04:52   0:00 [migration/1]
+root           -  0.0    -      -     - -        S    04:52   0:00 -
+root          18  0.0  0.0      0     0 ?        -    04:52   0:00 [ksoftirqd/1]
+root           -  0.0    -      -     - -        S    04:52   0:00 -
+root          20  0.0  0.0      0     0 ?        -    04:52   0:00 [kworker/1:0H-kblockd]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root          21  0.0  0.0      0     0 ?        -    04:52   0:00 [kdevtmpfs]
+root           -  0.0    -      -     - -        S    04:52   0:00 -
+root          22  0.0  0.0      0     0 ?        -    04:52   0:00 [netns]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root          23  0.0  0.0      0     0 ?        -    04:52   0:00 [rcu_tasks_kthre]
+root           -  0.0    -      -     - -        S    04:52   0:00 -
+root          24  0.0  0.0      0     0 ?        -    04:52   0:00 [kauditd]
+root           -  0.0    -      -     - -        S    04:52   0:00 -
+root          25  0.0  0.0      0     0 ?        -    04:52   0:00 [khungtaskd]
+root           -  0.0    -      -     - -        S    04:52   0:00 -
+root          26  0.0  0.0      0     0 ?        -    04:52   0:00 [oom_reaper]
+root           -  0.0    -      -     - -        S    04:52   0:00 -
+root          27  0.0  0.0      0     0 ?        -    04:52   0:00 [writeback]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root          28  0.0  0.0      0     0 ?        -    04:52   0:00 [kcompactd0]
+root           -  0.0    -      -     - -        S    04:52   0:00 -
+root          29  0.0  0.0      0     0 ?        -    04:52   0:00 [ksmd]
+root           -  0.0    -      -     - -        SN   04:52   0:00 -
+root          30  0.0  0.0      0     0 ?        -    04:52   0:00 [khugepaged]
+root           -  0.0    -      -     - -        SN   04:52   0:00 -
+root          77  0.0  0.0      0     0 ?        -    04:52   0:00 [kintegrityd]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root          78  0.0  0.0      0     0 ?        -    04:52   0:00 [kblockd]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root          79  0.0  0.0      0     0 ?        -    04:52   0:00 [blkcg_punt_bio]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root          80  0.0  0.0      0     0 ?        -    04:52   0:00 [tpm_dev_wq]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root          81  0.0  0.0      0     0 ?        -    04:52   0:00 [ata_sff]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root          82  0.0  0.0      0     0 ?        -    04:52   0:00 [md]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root          83  0.0  0.0      0     0 ?        -    04:52   0:00 [edac-poller]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root          84  0.0  0.0      0     0 ?        -    04:52   0:00 [devfreq_wq]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root          85  0.0  0.0      0     0 ?        -    04:52   0:00 [watchdogd]
+root           -  0.0    -      -     - -        S    04:52   0:00 -
+root          88  0.0  0.0      0     0 ?        -    04:52   0:00 [kswapd0]
+root           -  0.0    -      -     - -        S    04:52   0:00 -
+root          89  0.0  0.0      0     0 ?        -    04:52   0:00 [ecryptfs-kthrea]
+root           -  0.0    -      -     - -        S    04:52   0:00 -
+root          91  0.0  0.0      0     0 ?        -    04:52   0:00 [kthrotld]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root          92  0.0  0.0      0     0 ?        -    04:52   0:00 [acpi_thermal_pm]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root          93  0.0  0.0      0     0 ?        -    04:52   0:00 [scsi_eh_0]
+root           -  0.0    -      -     - -        S    04:52   0:00 -
+root          94  0.0  0.0      0     0 ?        -    04:52   0:00 [scsi_tmf_0]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root          95  0.0  0.0      0     0 ?        -    04:52   0:00 [scsi_eh_1]
+root           -  0.0    -      -     - -        S    04:52   0:00 -
+root          96  0.0  0.0      0     0 ?        -    04:52   0:00 [scsi_tmf_1]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root          98  0.0  0.0      0     0 ?        -    04:52   0:00 [vfio-irqfd-clea]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root         101  0.0  0.0      0     0 ?        -    04:52   0:00 [ipv6_addrconf]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root         110  0.0  0.0      0     0 ?        -    04:52   0:00 [kstrp]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root         113  0.0  0.0      0     0 ?        -    04:52   0:00 [kworker/u5:0]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root         126  0.0  0.0      0     0 ?        -    04:52   0:00 [charger_manager]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root         127  0.0  0.0      0     0 ?        -    04:52   0:00 [kworker/1:1H-kblockd]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root         170  0.0  0.0      0     0 ?        -    04:52   0:00 [scsi_eh_2]
+root           -  0.0    -      -     - -        S    04:52   0:00 -
+root         171  0.0  0.0      0     0 ?        -    04:52   0:00 [scsi_tmf_2]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root         173  0.0  0.0      0     0 ?        -    04:52   0:00 [kworker/0:1H-kblockd]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root         194  0.0  0.0      0     0 ?        -    04:52   0:00 [jbd2/sda5-8]
+root           -  0.0    -      -     - -        S    04:52   0:00 -
+root         195  0.0  0.0      0     0 ?        -    04:52   0:00 [ext4-rsv-conver]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root         234  0.0  0.9  68660 18628 ?        -    04:52   0:00 /lib/systemd/systemd-journald
+root           -  0.0    -      -     - -        S<s  04:52   0:00 -
+root         260  0.0  0.0      0     0 ?        -    04:52   0:01 [kworker/1:4-events]
+root           -  0.0    -      -     - -        I    04:52   0:01 -
+root         268  0.0  0.0      0     0 ?        -    04:52   0:00 [irq/18-vmwgfx]
+root           -  0.0    -      -     - -        S    04:52   0:00 -
+root         269  0.0  0.0      0     0 ?        -    04:52   0:00 [ttm_swap]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root         278  0.0  0.0      0     0 ?        -    04:52   0:00 [loop0]
+root           -  0.0    -      -     - -        S<   04:52   0:00 -
+root         279  0.0  0.0      0     0 ?        -    04:52   0:00 [loop1]
+root           -  0.0    -      -     - -        S<   04:52   0:00 -
+root         280  0.0  0.0      0     0 ?        -    04:52   0:00 [loop2]
+root           -  0.0    -      -     - -        S<   04:52   0:00 -
+root         282  0.0  0.0      0     0 ?        -    04:52   0:00 [loop3]
+root           -  0.0    -      -     - -        S<   04:52   0:00 -
+root         284  0.0  0.0      0     0 ?        -    04:52   0:00 [loop4]
+root           -  0.0    -      -     - -        S<   04:52   0:00 -
+root         285  0.0  0.0      0     0 ?        -    04:52   0:00 [loop5]
+root           -  0.0    -      -     - -        S<   04:52   0:00 -
+root         287  0.0  0.0      0     0 ?        -    04:52   0:00 [loop6]
+root           -  0.0    -      -     - -        S<   04:52   0:00 -
+root         289  0.0  0.0      0     0 ?        -    04:52   0:00 [loop7]
+root           -  0.0    -      -     - -        S<   04:52   0:00 -
+root         292  0.1  0.3  24064  7652 ?        -    04:52   0:02 /lib/systemd/systemd-udevd
+root           -  0.1    -      -     - -        Ss   04:52   0:02 -
+root         293  0.0  0.0      0     0 ?        -    04:52   0:00 [loop8]
+root           -  0.0    -      -     - -        S<   04:52   0:00 -
+root         294  0.0  0.0      0     0 ?        -    04:52   0:00 [loop9]
+root           -  0.0    -      -     - -        S<   04:52   0:00 -
+root         325  0.0  0.0      0     0 ?        -    04:52   0:00 [iprt-VBoxWQueue]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+root         341  0.0  0.0      0     0 ?        -    04:52   0:00 [cryptd]
+root           -  0.0    -      -     - -        I<   04:52   0:00 -
+systemd+     550  0.0  0.6  24428 12588 ?        -    04:53   0:00 /lib/systemd/systemd-resolved
+systemd+       -  0.0    -      -     - -        Ss   04:53   0:00 -
+systemd+     551  0.0  0.3  90516  6260 ?        -    04:53   0:00 /lib/systemd/systemd-timesyncd
+systemd+       -  0.0    -      -     - -        Ssl  04:53   0:00 -
+systemd+       -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root         585  0.0  0.4 245304  9744 ?        -    04:53   0:00 /usr/lib/accountsservice/accounts-daemon
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root         586  0.0  0.0   2540   768 ?        -    04:53   0:00 /usr/sbin/acpid
+root           -  0.0    -      -     - -        Ss   04:53   0:00 -
+avahi        589  0.0  0.1   8520  3476 ?        -    04:53   0:00 avahi-daemon: running [VM.local]
+avahi          -  0.0    -      -     - -        Ss   04:53   0:00 -
+root         590  0.0  0.1  12496  2928 ?        -    04:53   0:00 /usr/sbin/cron -f
+root           -  0.0    -      -     - -        Ss   04:53   0:00 -
+message+     592  0.1  0.3   9828  6264 ?        -    04:53   0:02 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+message+       -  0.1    -      -     - -        Ss   04:53   0:02 -
+root         593  0.1  1.0 342392 22244 ?        -    04:53   0:02 /usr/sbin/NetworkManager --no-daemon
+root           -  0.0    -      -     - -        Ssl  04:53   0:01 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root         601  0.0  0.1  81824  3592 ?        -    04:53   0:00 /usr/sbin/irqbalance --foreground
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root         602  0.0  0.9  42392 19920 ?        -    04:53   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root           -  0.0    -      -     - -        Ss   04:53   0:00 -
+root         605  0.0  0.6 248612 13244 ?        -    04:53   0:01 /usr/lib/policykit-1/polkitd --no-debug
+root           -  0.0    -      -     - -        Ssl  04:53   0:01 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+syslog       608  0.0  0.2 224344  4808 ?        -    04:53   0:00 /usr/sbin/rsyslogd -n -iNONE
+syslog         -  0.0    -      -     - -        Ssl  04:53   0:00 -
+syslog         -  0.0    -      -     - -        Ssl  04:53   0:00 -
+syslog         -  0.0    -      -     - -        Ssl  04:53   0:00 -
+syslog         -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root         613  1.4  1.6 857512 33724 ?        -    04:53   0:29 /usr/lib/snapd/snapd
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.1    -      -     - -        Ssl  04:53   0:02 -
+root           -  0.2    -      -     - -        Ssl  04:53   0:04 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.1    -      -     - -        Ssl  04:53   0:02 -
+root           -  0.2    -      -     - -        Ssl  04:53   0:04 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.2    -      -     - -        Ssl  04:53   0:04 -
+root           -  0.1    -      -     - -        Ssl  04:53   0:03 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:01 -
+root           -  0.2    -      -     - -        Ssl  04:53   0:04 -
+root         628  0.0  0.3 238864  6420 ?        -    04:53   0:00 /usr/libexec/switcheroo-control
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root         629  0.0  0.4  17060  8484 ?        -    04:53   0:00 /lib/systemd/systemd-logind
+root           -  0.0    -      -     - -        Ss   04:53   0:00 -
+root         631  0.0  0.7 395656 14268 ?        -    04:53   0:00 /usr/lib/udisks2/udisksd
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root         633  0.0  0.2  13772  4832 ?        -    04:53   0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+root           -  0.0    -      -     - -        Ss   04:53   0:00 -
+avahi        637  0.0  0.0   8340   328 ?        -    04:53   0:00 avahi-daemon: chroot helper
+avahi          -  0.0    -      -     - -        S    04:53   0:00 -
+root         711  0.0  0.4  31388  8252 ?        -    04:53   0:00 /usr/sbin/cupsd -l
+root           -  0.0    -      -     - -        Ss   04:53   0:00 -
+root         737  0.0  0.6 180432 12900 ?        -    04:53   0:00 /usr/sbin/cups-browsed
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root         756  0.0  0.1 298748  2444 ?        -    04:53   0:00 /usr/sbin/VBoxService
+root           -  0.0    -      -     - -        Sl   04:53   0:00 -
+root           -  0.0    -      -     - -        Sl   04:53   0:00 -
+root           -  0.0    -      -     - -        Sl   04:53   0:00 -
+root           -  0.0    -      -     - -        Sl   04:53   0:00 -
+root           -  0.0    -      -     - -        Sl   04:53   0:00 -
+root           -  0.0    -      -     - -        Sl   04:53   0:00 -
+root           -  0.0    -      -     - -        Sl   04:53   0:00 -
+root           -  0.0    -      -     - -        Sl   04:53   0:00 -
+root           -  0.0    -      -     - -        Sl   04:53   0:00 -
+root         771  0.0  0.5 240008 10668 ?        -    04:53   0:00 /usr/sbin/ModemManager --filter-policy=strict
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root         782  0.0  1.1 121180 22572 ?        -    04:53   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root         785  0.0  2.2 821792 45028 ?        -    04:53   0:01 /usr/bin/containerd
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root         786  0.0  0.1   6904  2976 ?        -    04:53   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf
+root           -  0.0    -      -     - -        Ss   04:53   0:00 -
+root         804  0.0  0.4 242804  8608 ?        -    04:53   0:00 /usr/sbin/gdm3
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root         812  0.0  0.3  12248  7068 ?        -    04:53   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root           -  0.0    -      -     - -        Ss   04:53   0:00 -
+root         834  0.0  4.0 861304 82292 ?        -    04:53   0:01 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root         835  0.0  0.1   5692  3280 ?        -    04:53   0:00 /usr/sbin/inetd
+root           -  0.0    -      -     - -        Ss   04:53   0:00 -
+kernoops     884  0.0  0.0  11252   444 ?        -    04:53   0:00 /usr/sbin/kerneloops --test
+kernoops       -  0.0    -      -     - -        Ss   04:53   0:00 -
+kernoops     886  0.0  0.0  11252   448 ?        -    04:53   0:00 /usr/sbin/kerneloops
+kernoops       -  0.0    -      -     - -        Ss   04:53   0:00 -
+rtkit       1137  0.0  0.1 152928  3004 ?        -    04:53   0:00 /usr/libexec/rtkit-daemon
+rtkit          -  0.0    -      -     - -        SNsl 04:53   0:00 -
+rtkit          -  0.0    -      -     - -        Ssl  04:53   0:00 -
+rtkit          -  0.0    -      -     - -        SNsl 04:53   0:00 -
+root        1323  0.0  0.4 255424  9796 ?        -    04:53   0:00 /usr/lib/upower/upowerd
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root           -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root        1401  0.0  0.0   2488   572 ?        -    04:53   0:00 bpfilter_umh
+root           -  0.0    -      -     - -        S    04:53   0:00 -
+colord      1823  0.0  0.8 252280 16808 ?        -    04:53   0:00 /usr/libexec/colord
+colord         -  0.0    -      -     - -        Ssl  04:53   0:00 -
+colord         -  0.0    -      -     - -        Ssl  04:53   0:00 -
+colord         -  0.0    -      -     - -        Ssl  04:53   0:00 -
+root        1873  0.0  0.4 170512  9904 ?        -    04:54   0:00 gdm-session-worker [pam/gdm-password]
+root           -  0.0    -      -     - -        Sl   04:54   0:00 -
+root           -  0.0    -      -     - -        Sl   04:54   0:00 -
+root           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        1901  0.0  0.5  19336 10648 ?        -    04:54   0:00 /lib/systemd/systemd --user LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin NOTIFY_SOCKET=/run/systemd/notify HOME=/home/seed LOGNAME=seed USER=seed SHELL=/bin/bash INVOCATION_ID=9d82f526a79346d798d85935aac08283 JOURNAL_STREAM=9:33883 XDG_RUNTIME_DIR=/run/user/1000
+seed           -  0.0    -      -     - -        Ss   04:54   0:00 -
+seed        1905  0.0  0.1 169444  3752 ?        -    04:54   0:00 (sd-pam)
+seed           -  0.0    -      -     - -        S    04:54   0:00 -
+seed        1910  0.0  0.9 1747728 19396 ?       -    04:54   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus NOTIFY_SOCKET=/run/user/1000/systemd/notify MANAGERPID=1901 LISTEN_PID=1910 LISTEN_FDS=1 LISTEN_FDNAMES=pulseaudio.socket INVOCATION_ID=f82a273fad604c078055a4f3e83b41b6 JOURNAL_STREAM=9:34903
+seed           -  0.0    -      -     - -        S<sl 04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        1912  0.7  2.0 597220 41756 ?        -    04:54   0:15 /usr/libexec/tracker-miner-fs HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=1901 INVOCATION_ID=aa0ba12d239041ac9b393db73dd6a54a JOURNAL_STREAM=9:34151
+seed           -  0.6    -      -     - -        SNsl 04:54   0:11 -
+seed           -  0.0    -      -     - -        SNsl 04:54   0:00 -
+seed           -  0.0    -      -     - -        SNsl 04:54   0:00 -
+seed           -  0.0    -      -     - -        SNsl 04:54   0:00 -
+seed           -  0.0    -      -     - -        SNsl 04:54   0:00 -
+seed        1914  0.0  0.2   8208  5388 ?        -    04:54   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=1901 LISTEN_PID=1914 LISTEN_FDS=1 LISTEN_FDNAMES=dbus.socket INVOCATION_ID=5d0cf81377424c81917079250084a398 JOURNAL_STREAM=9:34194
+seed           -  0.0    -      -     - -        Ss   04:54   0:00 -
+seed        1919  0.0  0.3 243532  7408 ?        -    04:54   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        1923  0.0  0.3 242916  7776 ?        -    04:54   0:00 /usr/libexec/gvfsd HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=1901 INVOCATION_ID=26446428ef7842bd901a728ffa955b2e JOURNAL_STREAM=9:34259
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        1928  0.0  0.4 382052  8564 ?        -    04:54   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=1901 INVOCATION_ID=26446428ef7842bd901a728ffa955b2e JOURNAL_STREAM=9:34259
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        1947  0.0  0.5 320796 11636 ?        -    04:54   0:00 /usr/libexec/gvfs-udisks2-volume-monitor HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=1901 INVOCATION_ID=8e7fd4ef09cd443789f3f97ad6923b9c JOURNAL_STREAM=9:35206
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        1955  0.0  0.4 319944  9048 ?        -    04:54   0:00 /usr/libexec/gvfs-afc-volume-monitor HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=1901 INVOCATION_ID=9dac89a2e75d4790af9c3f263a749f07 JOURNAL_STREAM=9:34335
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        1960  0.0  0.3 241164  6964 ?        -    04:54   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=1901 INVOCATION_ID=23ecea2ceeb34ce492f4aaf5d196ee8d JOURNAL_STREAM=9:34375
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        1964  0.0  0.2 239092  6008 ?        -    04:54   0:00 /usr/libexec/gvfs-goa-volume-monitor HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=1901 INVOCATION_ID=082b88ee08a94af18108c9fc46961ebd JOURNAL_STREAM=9:35269
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        1970  0.0  1.7 545544 36576 ?        -    04:54   0:00 /usr/libexec/goa-daemon SHELL=/bin/bash DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=56175264b831c3d071d273cb627e1cb5 QT_ACCESSIBILITY=1 XDG_RUNTIME_DIR=/run/user/1000 LC_NAME=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin LC_MONETARY=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 GTK_MODULES=gail:atk-bridge LC_IDENTIFICATION=zh_CN.UTF-8 XDG_DATA_DIRS=/usr/local/share/:/usr/share/:/var/lib/snapd/desktop JOURNAL_STREAM=9:34194 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=56175264b831c3d071d273cb627e1cb5 INVOCATION_ID=5d0cf81377424c81917079250084a398 USER=seed DBUS_STARTER_BUS_TYPE=session LC_ADDRESS=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 MANAGERPID=1901 LANG=zh_CN.UTF-8 HOME=/home/seed LOGNAME=seed
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        1971  0.0  0.3 167208  6692 tty2     -    04:54   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu XDG_SEAT=seat0 LOGNAME=seed USER=seed USERNAME=seed HOME=/home/seed PWD=/home/seed SHELL=/bin/bash PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin XDG_SESSION_TYPE=x11 XDG_VTNR=2 LANG=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 PAPERSIZE=a4 LANGUAGE=zh_CN:en XDG_SESSION_ID=3 XDG_RUNTIME_DIR=/run/user/1000 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus XDG_SESSION_CLASS=user XDG_CURRENT_DESKTOP=ubuntu:GNOME GDMSESSION=ubuntu DESKTOP_SESSION=ubuntu XDG_SESSION_DESKTOP=ubuntu
+seed           -  0.0    -      -     - -        Ssl+ 04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl+ 04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl+ 04:54   0:00 -
+seed        1979  0.0  0.5 321992 11676 ?        -    04:54   0:00 /usr/libexec/goa-identity-service SHELL=/bin/bash DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=56175264b831c3d071d273cb627e1cb5 QT_ACCESSIBILITY=1 XDG_RUNTIME_DIR=/run/user/1000 LC_NAME=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin LC_MONETARY=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 GTK_MODULES=gail:atk-bridge LC_IDENTIFICATION=zh_CN.UTF-8 XDG_DATA_DIRS=/usr/local/share/:/usr/share/:/var/lib/snapd/desktop JOURNAL_STREAM=9:34194 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=56175264b831c3d071d273cb627e1cb5 INVOCATION_ID=5d0cf81377424c81917079250084a398 USER=seed DBUS_STARTER_BUS_TYPE=session LC_ADDRESS=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 MANAGERPID=1901 LANG=zh_CN.UTF-8 HOME=/home/seed LOGNAME=seed
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        1983  0.7  2.8 266288 57512 tty2     -    04:54   0:14 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3 USER=seed LC_TIME=zh_CN.UTF-8 LANGUAGE=zh_CN:en XDG_SEAT=seat0 XDG_SESSION_TYPE=x11 HOME=/home/seed DESKTOP_SESSION=ubuntu LC_MONETARY=zh_CN.UTF-8 XORG_RUN_AS_USER_OK=1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus LOGNAME=seed XDG_SESSION_CLASS=user USERNAME=seed XDG_SESSION_ID=3 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin PAPERSIZE=a4 LC_ADDRESS=zh_CN.UTF-8 XDG_RUNTIME_DIR=/run/user/1000 LANG=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_SESSION_DESKTOP=ubuntu SHELL=/bin/bash LC_NAME=zh_CN.UTF-8 GDMSESSION=ubuntu LC_MEASUREMENT=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 XDG_VTNR=2 PWD=/home/seed LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8
+seed           -  0.6    -      -     - -        Sl+  04:54   0:12 -
+seed           -  0.1    -      -     - -        Sl+  04:54   0:02 -
+seed        1987  0.0  0.3 238888  6408 ?        -    04:54   0:00 /usr/libexec/gvfs-mtp-volume-monitor HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=1901 INVOCATION_ID=38d9fa50bf3b48c0b9675d7a097a0994 JOURNAL_STREAM=9:35428
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2005  0.0  0.7 194184 15656 tty2     -    04:54   0:00 /usr/libexec/gnome-session-binary --systemd --systemd --session=ubuntu LANGUAGE=zh_CN:en USER=seed LC_TIME=zh_CN.UTF-8 XDG_SEAT=seat0 XDG_SESSION_TYPE=x11 SSH_AGENT_PID=2101 SHLVL=0 HOME=/home/seed DESKTOP_SESSION=ubuntu GTK_MODULES=gail:atk-bridge GNOME_SHELL_SESSION_MODE=ubuntu LC_MONETARY=zh_CN.UTF-8 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus LOGNAME=seed XDG_SESSION_CLASS=user USERNAME=seed XDG_SESSION_ID=3 WINDOWPATH=2 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin PAPERSIZE=a4 LC_ADDRESS=zh_CN.UTF-8 XDG_RUNTIME_DIR=/run/user/1000 DISPLAY=:0 LANG=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=ubuntu:GNOME LC_TELEPHONE=zh_CN.UTF-8 XDG_SESSION_DESKTOP=ubuntu XAUTHORITY=/run/user/1000/gdm/Xauthority SSH_AUTH_SOCK=/tmp/ssh-IeLqodnNzVe8/agent.2005 SHELL=/bin/bash LC_NAME=zh_CN.UTF-8 QT_ACCESSIBILITY=1 GDMSESSION=ubuntu LC_MEASUREMENT=zh_CN.UTF-8 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 LC_IDENTIFICATION=zh_CN.UTF-8 XDG_VTNR=2 PWD=/home/seed XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8
+seed           -  0.0    -      -     - -        Sl+  04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl+  04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl+  04:54   0:00 -
+seed        2071  0.0  0.0  25880   444 ?        -    04:54   0:00 /usr/bin/VBoxClient --clipboard SHELL=/bin/bash QT_ACCESSIBILITY=1 XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg LANGUAGE=zh_CN:en LC_ADDRESS=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 DESKTOP_SESSION=ubuntu LC_MONETARY=zh_CN.UTF-8 GTK_MODULES=gail:atk-bridge XDG_SEAT=seat0 PWD=/home/seed XDG_SESSION_DESKTOP=ubuntu LOGNAME=seed XDG_SESSION_TYPE=x11 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 XAUTHORITY=/run/user/1000/gdm/Xauthority WINDOWPATH=2 HOME=/home/seed USERNAME=seed IM_CONFIG_PHASE=1 LC_PAPER=zh_CN.UTF-8 LANG=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_SESSION_CLASS=user LC_IDENTIFICATION=zh_CN.UTF-8 USER=seed DISPLAY=:0 SHLVL=1 LC_TELEPHONE=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 XDG_VTNR=2 XDG_SESSION_ID=3 PAPERSIZE=a4 XDG_RUNTIME_DIR=/run/user/1000 LC_TIME=zh_CN.UTF-8 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin GDMSESSION=ubuntu DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus LC_NUMERIC=zh_CN.UTF-8 _=/usr/bin/VBoxClient
+seed           -  0.0    -      -     - -        S    04:54   0:00 -
+seed        2073  0.0  0.2 158148  4228 ?        -    04:54   0:00 /usr/bin/VBoxClient --clipboard SHELL=/bin/bash QT_ACCESSIBILITY=1 XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg LANGUAGE=zh_CN:en LC_ADDRESS=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 DESKTOP_SESSION=ubuntu LC_MONETARY=zh_CN.UTF-8 GTK_MODULES=gail:atk-bridge XDG_SEAT=seat0 PWD=/home/seed XDG_SESSION_DESKTOP=ubuntu LOGNAME=seed XDG_SESSION_TYPE=x11 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 XAUTHORITY=/run/user/1000/gdm/Xauthority WINDOWPATH=2 HOME=/home/seed USERNAME=seed IM_CONFIG_PHASE=1 LC_PAPER=zh_CN.UTF-8 LANG=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_SESSION_CLASS=user LC_IDENTIFICATION=zh_CN.UTF-8 USER=seed DISPLAY=:0 SHLVL=1 LC_TELEPHONE=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 XDG_VTNR=2 XDG_SESSION_ID=3 PAPERSIZE=a4 XDG_RUNTIME_DIR=/run/user/1000 LC_TIME=zh_CN.UTF-8 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin GDMSESSION=ubuntu DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus LC_NUMERIC=zh_CN.UTF-8 _=/usr/bin/VBoxClient
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        2081  0.0  0.0  25880   448 ?        -    04:54   0:00 /usr/bin/VBoxClient --seamless SHELL=/bin/bash QT_ACCESSIBILITY=1 XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg LANGUAGE=zh_CN:en LC_ADDRESS=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 DESKTOP_SESSION=ubuntu LC_MONETARY=zh_CN.UTF-8 GTK_MODULES=gail:atk-bridge XDG_SEAT=seat0 PWD=/home/seed XDG_SESSION_DESKTOP=ubuntu LOGNAME=seed XDG_SESSION_TYPE=x11 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 XAUTHORITY=/run/user/1000/gdm/Xauthority WINDOWPATH=2 HOME=/home/seed USERNAME=seed IM_CONFIG_PHASE=1 LC_PAPER=zh_CN.UTF-8 LANG=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_SESSION_CLASS=user LC_IDENTIFICATION=zh_CN.UTF-8 USER=seed DISPLAY=:0 SHLVL=1 LC_TELEPHONE=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 XDG_VTNR=2 XDG_SESSION_ID=3 PAPERSIZE=a4 XDG_RUNTIME_DIR=/run/user/1000 LC_TIME=zh_CN.UTF-8 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin GDMSESSION=ubuntu DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus LC_NUMERIC=zh_CN.UTF-8 _=/usr/bin/VBoxClient
+seed           -  0.0    -      -     - -        S    04:54   0:00 -
+seed        2083  0.0  0.1 158116  2868 ?        -    04:54   0:00 /usr/bin/VBoxClient --seamless SHELL=/bin/bash QT_ACCESSIBILITY=1 XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg LANGUAGE=zh_CN:en LC_ADDRESS=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 DESKTOP_SESSION=ubuntu LC_MONETARY=zh_CN.UTF-8 GTK_MODULES=gail:atk-bridge XDG_SEAT=seat0 PWD=/home/seed XDG_SESSION_DESKTOP=ubuntu LOGNAME=seed XDG_SESSION_TYPE=x11 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 XAUTHORITY=/run/user/1000/gdm/Xauthority WINDOWPATH=2 HOME=/home/seed USERNAME=seed IM_CONFIG_PHASE=1 LC_PAPER=zh_CN.UTF-8 LANG=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_SESSION_CLASS=user LC_IDENTIFICATION=zh_CN.UTF-8 USER=seed DISPLAY=:0 SHLVL=1 LC_TELEPHONE=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 XDG_VTNR=2 XDG_SESSION_ID=3 PAPERSIZE=a4 XDG_RUNTIME_DIR=/run/user/1000 LC_TIME=zh_CN.UTF-8 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin GDMSESSION=ubuntu DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus LC_NUMERIC=zh_CN.UTF-8 _=/usr/bin/VBoxClient
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        2086  0.0  0.0  25880   452 ?        -    04:54   0:00 /usr/bin/VBoxClient --draganddrop SHELL=/bin/bash QT_ACCESSIBILITY=1 XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg LANGUAGE=zh_CN:en LC_ADDRESS=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 DESKTOP_SESSION=ubuntu LC_MONETARY=zh_CN.UTF-8 GTK_MODULES=gail:atk-bridge XDG_SEAT=seat0 PWD=/home/seed XDG_SESSION_DESKTOP=ubuntu LOGNAME=seed XDG_SESSION_TYPE=x11 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 XAUTHORITY=/run/user/1000/gdm/Xauthority WINDOWPATH=2 HOME=/home/seed USERNAME=seed IM_CONFIG_PHASE=1 LC_PAPER=zh_CN.UTF-8 LANG=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_SESSION_CLASS=user LC_IDENTIFICATION=zh_CN.UTF-8 USER=seed DISPLAY=:0 SHLVL=1 LC_TELEPHONE=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 XDG_VTNR=2 XDG_SESSION_ID=3 PAPERSIZE=a4 XDG_RUNTIME_DIR=/run/user/1000 LC_TIME=zh_CN.UTF-8 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin GDMSESSION=ubuntu DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus LC_NUMERIC=zh_CN.UTF-8 _=/usr/bin/VBoxClient
+seed           -  0.0    -      -     - -        S    04:54   0:00 -
+seed        2090  0.0  0.0  25880   448 ?        -    04:54   0:00 /usr/bin/VBoxClient --vmsvga SHELL=/bin/bash QT_ACCESSIBILITY=1 XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg LANGUAGE=zh_CN:en LC_ADDRESS=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 DESKTOP_SESSION=ubuntu LC_MONETARY=zh_CN.UTF-8 GTK_MODULES=gail:atk-bridge XDG_SEAT=seat0 PWD=/home/seed XDG_SESSION_DESKTOP=ubuntu LOGNAME=seed XDG_SESSION_TYPE=x11 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 XAUTHORITY=/run/user/1000/gdm/Xauthority WINDOWPATH=2 HOME=/home/seed USERNAME=seed IM_CONFIG_PHASE=1 LC_PAPER=zh_CN.UTF-8 LANG=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_SESSION_CLASS=user LC_IDENTIFICATION=zh_CN.UTF-8 USER=seed DISPLAY=:0 SHLVL=1 LC_TELEPHONE=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 XDG_VTNR=2 XDG_SESSION_ID=3 PAPERSIZE=a4 XDG_RUNTIME_DIR=/run/user/1000 LC_TIME=zh_CN.UTF-8 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin GDMSESSION=ubuntu DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus LC_NUMERIC=zh_CN.UTF-8 _=/usr/bin/VBoxClient
+seed           -  0.0    -      -     - -        S    04:54   0:00 -
+seed        2092  0.2  0.1 158632  2924 ?        -    04:54   0:05 /usr/bin/VBoxClient --draganddrop SHELL=/bin/bash QT_ACCESSIBILITY=1 XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg LANGUAGE=zh_CN:en LC_ADDRESS=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 DESKTOP_SESSION=ubuntu LC_MONETARY=zh_CN.UTF-8 GTK_MODULES=gail:atk-bridge XDG_SEAT=seat0 PWD=/home/seed XDG_SESSION_DESKTOP=ubuntu LOGNAME=seed XDG_SESSION_TYPE=x11 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 XAUTHORITY=/run/user/1000/gdm/Xauthority WINDOWPATH=2 HOME=/home/seed USERNAME=seed IM_CONFIG_PHASE=1 LC_PAPER=zh_CN.UTF-8 LANG=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_SESSION_CLASS=user LC_IDENTIFICATION=zh_CN.UTF-8 USER=seed DISPLAY=:0 SHLVL=1 LC_TELEPHONE=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 XDG_VTNR=2 XDG_SESSION_ID=3 PAPERSIZE=a4 XDG_RUNTIME_DIR=/run/user/1000 LC_TIME=zh_CN.UTF-8 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin GDMSESSION=ubuntu DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus LC_NUMERIC=zh_CN.UTF-8 _=/usr/bin/VBoxClient
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.2    -      -     - -        Sl   04:54   0:05 -
+seed        2093  0.0  0.1 160256  3548 ?        -    04:54   0:00 /usr/bin/VBoxClient --vmsvga SHELL=/bin/bash QT_ACCESSIBILITY=1 XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg LANGUAGE=zh_CN:en LC_ADDRESS=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 DESKTOP_SESSION=ubuntu LC_MONETARY=zh_CN.UTF-8 GTK_MODULES=gail:atk-bridge XDG_SEAT=seat0 PWD=/home/seed XDG_SESSION_DESKTOP=ubuntu LOGNAME=seed XDG_SESSION_TYPE=x11 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 XAUTHORITY=/run/user/1000/gdm/Xauthority WINDOWPATH=2 HOME=/home/seed USERNAME=seed IM_CONFIG_PHASE=1 LC_PAPER=zh_CN.UTF-8 LANG=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_SESSION_CLASS=user LC_IDENTIFICATION=zh_CN.UTF-8 USER=seed DISPLAY=:0 SHLVL=1 LC_TELEPHONE=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 XDG_VTNR=2 XDG_SESSION_ID=3 PAPERSIZE=a4 XDG_RUNTIME_DIR=/run/user/1000 LC_TIME=zh_CN.UTF-8 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin GDMSESSION=ubuntu DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus LC_NUMERIC=zh_CN.UTF-8 _=/usr/bin/VBoxClient
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        2101  0.0  0.0   6108   448 ?        -    04:54   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+seed           -  0.0    -      -     - -        Ss   04:54   0:00 -
+seed        2118  0.0  0.4 309812  9456 ?        -    04:54   0:00 /usr/libexec/at-spi-bus-launcher HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed SHLVL=1 USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=e9565ca7c65143d6bb5bf2cd59e1dedc JOURNAL_STREAM=9:37053
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2123  0.0  0.2   7236  4368 ?        -    04:54   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed SHLVL=1 USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=e9565ca7c65143d6bb5bf2cd59e1dedc JOURNAL_STREAM=9:37053
+seed           -  0.0    -      -     - -        S    04:54   0:00 -
+root        2125  0.0  0.2  23032  4288 ?        -    04:54   0:00 sendmail: MTA: accepting connections
+root           -  0.0    -      -     - -        Ss   04:54   0:00 -
+seed        2129  0.0  0.2  93292  4204 ?        -    04:54   0:00 /usr/libexec/gnome-session-ctl --monitor HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/tmp/ssh-IeLqodnNzVe8/agent.2005 USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 _=/usr/bin/dbus-update-activation-environment NOTIFY_SOCKET=/run/user/1000/systemd/notify MANAGERPID=1901 INVOCATION_ID=90027c05c0144578aae30065f7a2841e JOURNAL_STREAM=9:37239
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2136  0.0  0.8 629708 17964 ?        -    04:54   0:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/tmp/ssh-IeLqodnNzVe8/agent.2005 USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 _=/usr/bin/dbus-update-activation-environment NOTIFY_SOCKET=/run/user/1000/systemd/notify MANAGERPID=1901 INVOCATION_ID=0159f35251d64b46b9310d42e8796e9f JOURNAL_STREAM=9:37355
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2157  1.0 12.2 4002232 249584 ?      -    04:54   0:20 /usr/bin/gnome-shell HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment NOTIFY_SOCKET=/run/user/1000/systemd/notify MANAGERPID=1901 INVOCATION_ID=4b78749857c64bedb684e7dc75f9d68b JOURNAL_STREAM=9:37674
+seed           -  1.0    -      -     - -        Ssl  04:54   0:19 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:57   0:00 -
+seed        2178  0.0  0.5 391816 10584 ?        -    04:54   0:01 ibus-daemon --panel disable --xim HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment NOTIFY_SOCKET=/run/user/1000/systemd/notify MANAGERPID=1901 INVOCATION_ID=4b78749857c64bedb684e7dc75f9d68b JOURNAL_STREAM=9:37674 GJS_DEBUG_OUTPUT=stderr GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        2182  0.0  0.4 169860  9252 ?        -    04:54   0:00 /usr/libexec/ibus-memconf HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment NOTIFY_SOCKET=/run/user/1000/systemd/notify MANAGERPID=1901 INVOCATION_ID=4b78749857c64bedb684e7dc75f9d68b JOURNAL_STREAM=9:37674 GJS_DEBUG_OUTPUT=stderr GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        2183  0.1  1.6 281712 33780 ?        -    04:54   0:02 /usr/libexec/ibus-extension-gtk3 HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment NOTIFY_SOCKET=/run/user/1000/systemd/notify MANAGERPID=1901 INVOCATION_ID=4b78749857c64bedb684e7dc75f9d68b JOURNAL_STREAM=9:37674 GJS_DEBUG_OUTPUT=stderr GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+seed           -  0.1    -      -     - -        Sl   04:54   0:02 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        2187  0.0  1.4 203968 30320 ?        -    04:54   0:00 /usr/libexec/ibus-x11 --kill-daemon HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment NOTIFY_SOCKET=/run/user/1000/systemd/notify MANAGERPID=1901 INVOCATION_ID=4b78749857c64bedb684e7dc75f9d68b JOURNAL_STREAM=9:37674 GJS_DEBUG_OUTPUT=stderr GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        2190  0.0  0.4 243660  9464 ?        -    04:54   0:00 /usr/libexec/ibus-portal XDG_RUNTIME_DIR=/run/user/1000 SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 XMODIFIERS=@im=ibus XDG_SESSION_TYPE=x11 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=56175264b831c3d071d273cb627e1cb5 USER=seed XAUTHORITY=/run/user/1000/gdm/Xauthority QT_IM_MODULE=ibus LC_ADDRESS=zh_CN.UTF-8 DBUS_STARTER_BUS_TYPE=session SHLVL=0 XDG_MENU_PREFIX=gnome- XDG_SESSION_DESKTOP=ubuntu SHELL=/bin/bash QT_ACCESSIBILITY=1 LC_NAME=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 WINDOWPATH=2 USERNAME=seed XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop LANGUAGE=zh_CN:en IM_CONFIG_PHASE=1 GNOME_SHELL_SESSION_MODE=ubuntu LC_TELEPHONE=zh_CN.UTF-8 PWD=/home/seed HOME=/home/seed _=/usr/bin/dbus-update-activation-environment DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=56175264b831c3d071d273cb627e1cb5 DISPLAY=:0 LC_PAPER=zh_CN.UTF-8 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh LC_NUMERIC=zh_CN.UTF-8 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin GNOME_DESKTOP_SESSION_ID=this-is-deprecated GTK_MODULES=gail:atk-bridge GDMSESSION=ubuntu JOURNAL_STREAM=9:37355 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 INVOCATION_ID=0159f35251d64b46b9310d42e8796e9f XDG_SESSION_CLASS=user PAPERSIZE=a4 LANG=zh_CN.UTF-8 LOGNAME=seed XDG_CURRENT_DESKTOP=ubuntu:GNOME DESKTOP_SESSION=ubuntu LC_IDENTIFICATION=zh_CN.UTF-8 SSH_AGENT_PID=2101 MANAGERPID=1901 XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        2199  0.0  0.3 162904  6748 ?        -    04:54   0:00 /usr/libexec/at-spi2-registryd --use-gnome-session SHELL=/bin/bash DBUS_STARTER_ADDRESS=unix:abstract=/tmp/dbus-eE2PB4A3SR,guid=e8e660c9ec485cd5211a1e86627e1cb9 XDG_CURRENT_DESKTOP=ubuntu:GNOME DISPLAY=:0 QT_ACCESSIBILITY=1 XDG_RUNTIME_DIR=/run/user/1000 DESKTOP_SESSION=ubuntu LC_NAME=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 WINDOWPATH=2 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin LC_MONETARY=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 USERNAME=seed GDMSESSION=ubuntu GTK_MODULES=gail:atk-bridge LC_IDENTIFICATION=zh_CN.UTF-8 XDG_SESSION_TYPE=x11 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop JOURNAL_STREAM=9:37053 LANGUAGE=zh_CN:en IM_CONFIG_PHASE=1 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus INVOCATION_ID=e9565ca7c65143d6bb5bf2cd59e1dedc XDG_SESSION_CLASS=user XAUTHORITY=/run/user/1000/gdm/Xauthority USER=seed DBUS_STARTER_BUS_TYPE=accessibility LC_ADDRESS=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 SHLVL=1 PWD=/home/seed PAPERSIZE=a4 MANAGERPID=1901 LANG=zh_CN.UTF-8 _=/usr/bin/dbus-update-activation-environment XDG_SESSION_DESKTOP=ubuntu XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg HOME=/home/seed LOGNAME=seed
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        2204  0.0  0.2 238904  4604 ?        -    04:54   0:00 /usr/libexec/xdg-permission-store HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=381fd6cf578d43118402f446beb79f55 JOURNAL_STREAM=9:36699
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2205  0.0  1.0 581764 21204 ?        -    04:54   0:00 /usr/libexec/gnome-shell-calendar-server XDG_RUNTIME_DIR=/run/user/1000 SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 XMODIFIERS=@im=ibus XDG_SESSION_TYPE=x11 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=56175264b831c3d071d273cb627e1cb5 USER=seed XAUTHORITY=/run/user/1000/gdm/Xauthority QT_IM_MODULE=ibus LC_ADDRESS=zh_CN.UTF-8 DBUS_STARTER_BUS_TYPE=session SHLVL=0 XDG_MENU_PREFIX=gnome- XDG_SESSION_DESKTOP=ubuntu SHELL=/bin/bash QT_ACCESSIBILITY=1 LC_NAME=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 WINDOWPATH=2 USERNAME=seed XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop LANGUAGE=zh_CN:en IM_CONFIG_PHASE=1 GNOME_SHELL_SESSION_MODE=ubuntu LC_TELEPHONE=zh_CN.UTF-8 PWD=/home/seed HOME=/home/seed _=/usr/bin/dbus-update-activation-environment DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=56175264b831c3d071d273cb627e1cb5 DISPLAY=:0 LC_PAPER=zh_CN.UTF-8 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh LC_NUMERIC=zh_CN.UTF-8 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin GNOME_DESKTOP_SESSION_ID=this-is-deprecated GTK_MODULES=gail:atk-bridge GDMSESSION=ubuntu JOURNAL_STREAM=9:37355 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 INVOCATION_ID=0159f35251d64b46b9310d42e8796e9f XDG_SESSION_CLASS=user PAPERSIZE=a4 LANG=zh_CN.UTF-8 LOGNAME=seed XDG_CURRENT_DESKTOP=ubuntu:GNOME DESKTOP_SESSION=ubuntu LC_IDENTIFICATION=zh_CN.UTF-8 SSH_AGENT_PID=2101 MANAGERPID=1901 XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        2213  0.0  0.2 156356  5696 ?        -    04:54   0:00 /usr/libexec/dconf-service XDG_RUNTIME_DIR=/run/user/1000 SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 XMODIFIERS=@im=ibus XDG_SESSION_TYPE=x11 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=56175264b831c3d071d273cb627e1cb5 USER=seed XAUTHORITY=/run/user/1000/gdm/Xauthority QT_IM_MODULE=ibus LC_ADDRESS=zh_CN.UTF-8 DBUS_STARTER_BUS_TYPE=session SHLVL=0 XDG_MENU_PREFIX=gnome- XDG_SESSION_DESKTOP=ubuntu SHELL=/bin/bash QT_ACCESSIBILITY=1 LC_NAME=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 WINDOWPATH=2 USERNAME=seed XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop LANGUAGE=zh_CN:en IM_CONFIG_PHASE=1 GNOME_SHELL_SESSION_MODE=ubuntu LC_TELEPHONE=zh_CN.UTF-8 PWD=/home/seed HOME=/home/seed _=/usr/bin/dbus-update-activation-environment DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=56175264b831c3d071d273cb627e1cb5 DISPLAY=:0 LC_PAPER=zh_CN.UTF-8 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh LC_NUMERIC=zh_CN.UTF-8 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin GNOME_DESKTOP_SESSION_ID=this-is-deprecated GTK_MODULES=gail:atk-bridge GDMSESSION=ubuntu JOURNAL_STREAM=9:37355 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 INVOCATION_ID=0159f35251d64b46b9310d42e8796e9f XDG_SESSION_CLASS=user PAPERSIZE=a4 LANG=zh_CN.UTF-8 LOGNAME=seed XDG_CURRENT_DESKTOP=ubuntu:GNOME DESKTOP_SESSION=ubuntu LC_IDENTIFICATION=zh_CN.UTF-8 SSH_AGENT_PID=2101 MANAGERPID=1901 XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        2221  0.0  1.3 393856 26916 ?        -    04:54   0:00 /usr/libexec/evolution-source-registry HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=340b4e4806ea4d0aa4d68380f39b9144 JOURNAL_STREAM=9:38048
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2229  0.0  1.3 2528332 26724 ?       -    04:54   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications XDG_RUNTIME_DIR=/run/user/1000 SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 XMODIFIERS=@im=ibus XDG_SESSION_TYPE=x11 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=56175264b831c3d071d273cb627e1cb5 USER=seed XAUTHORITY=/run/user/1000/gdm/Xauthority QT_IM_MODULE=ibus LC_ADDRESS=zh_CN.UTF-8 DBUS_STARTER_BUS_TYPE=session SHLVL=0 XDG_MENU_PREFIX=gnome- XDG_SESSION_DESKTOP=ubuntu SHELL=/bin/bash QT_ACCESSIBILITY=1 LC_NAME=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 WINDOWPATH=2 USERNAME=seed XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop LANGUAGE=zh_CN:en IM_CONFIG_PHASE=1 GNOME_SHELL_SESSION_MODE=ubuntu LC_TELEPHONE=zh_CN.UTF-8 PWD=/home/seed HOME=/home/seed _=/usr/bin/dbus-update-activation-environment DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=56175264b831c3d071d273cb627e1cb5 DISPLAY=:0 LC_PAPER=zh_CN.UTF-8 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh LC_NUMERIC=zh_CN.UTF-8 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin GNOME_DESKTOP_SESSION_ID=this-is-deprecated GTK_MODULES=gail:atk-bridge GDMSESSION=ubuntu JOURNAL_STREAM=9:37355 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 INVOCATION_ID=0159f35251d64b46b9310d42e8796e9f XDG_SESSION_CLASS=user PAPERSIZE=a4 LANG=zh_CN.UTF-8 LOGNAME=seed XDG_CURRENT_DESKTOP=ubuntu:GNOME DESKTOP_SESSION=ubuntu LC_IDENTIFICATION=zh_CN.UTF-8 SSH_AGENT_PID=2101 MANAGERPID=1901 XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        2236  0.0  0.4 317280  9292 ?        -    04:54   0:00 /usr/libexec/gsd-a11y-settings HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=9390af6efabd447aafab0f0949d23782 JOURNAL_STREAM=9:36813
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2237  0.0  1.5 574196 31564 ?        -    04:54   0:00 /usr/libexec/gsd-color HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=cf70f159c5a74e529de9c199f970a902 JOURNAL_STREAM=9:38219
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2238  0.0  0.8 377728 17492 ?        -    04:54   0:00 /usr/libexec/gsd-datetime HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=bb5bfc14e0214812a7e9631f3d6fe102 JOURNAL_STREAM=9:38225
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2239  0.0  0.4 317520  9896 ?        -    04:54   0:00 /usr/libexec/gsd-housekeeping HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=a6a23d2667ee4a02b9ba7c5ece799562 JOURNAL_STREAM=9:38946
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2240  0.0  1.5 425708 30856 ?        -    04:54   0:00 /usr/libexec/gsd-keyboard HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=ee29ca371b5d4619aa2c391121959008 JOURNAL_STREAM=9:38947
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2242  0.0  1.6 907392 33344 ?        -    04:54   0:00 /usr/libexec/gsd-media-keys HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=de04a23434bd4da0a46d889698cdaf73 JOURNAL_STREAM=9:38366
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2243  0.0  1.5 352564 31828 ?        -    04:54   0:00 /usr/libexec/gsd-power HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=aa0774f78e5b4287a0c5ed13b18e7f54 JOURNAL_STREAM=9:38321
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2244  0.0  0.5 251444 11344 ?        -    04:54   0:00 /usr/libexec/gsd-print-notifications HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=566cba5dc3894a96bb8cb24542fd390b JOURNAL_STREAM=9:38323
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2246  0.0  0.3 460324  6132 ?        -    04:54   0:00 /usr/libexec/gsd-rfkill HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=16da30b5c5c74f219c6f3bb0dfa3b151 JOURNAL_STREAM=9:39076
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2249  0.0  0.2 238732  5976 ?        -    04:54   0:00 /usr/libexec/gsd-screensaver-proxy HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=8206c64ab4c14724905143440cf9be9b JOURNAL_STREAM=9:39077
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2250  0.0  0.6 472412 12720 ?        -    04:54   0:00 /usr/libexec/gsd-sharing HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=56636c450e9f412186dad4ed7adcdedb JOURNAL_STREAM=9:39078
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2251  0.0  0.5 321444 11016 ?        -    04:54   0:00 /usr/libexec/gsd-smartcard HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=183780fd53cd4424b6e3f388e0b9092f JOURNAL_STREAM=9:39119
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2255  0.0  0.5 325140 11284 ?        -    04:54   0:00 /usr/libexec/gsd-sound HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=8d52d2eac5dc42f49ec00c7b66679db9 JOURNAL_STREAM=9:38487
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2260  0.0  0.4 391244  9548 ?        -    04:54   0:00 /usr/libexec/gsd-usb-protection HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=81c0abdad57d4bdeb7b9c46660f43c20 JOURNAL_STREAM=9:38491
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2263  0.0  1.4 351508 30416 ?        -    04:54   0:00 /usr/libexec/gsd-wacom HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=2fa12f62872049baa009905326a968b8 JOURNAL_STREAM=9:39165
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2267  0.0  0.5 321604 10784 ?        -    04:54   0:00 /usr/libexec/gsd-wwan HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=46ed25ac7e064ee9a88d35ff4e1dae06 JOURNAL_STREAM=9:39208
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2271  0.0  1.5 352812 32172 ?        -    04:54   0:00 /usr/libexec/gsd-xsettings HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=dc84d1284503457caa66d13d7c1c6004 JOURNAL_STREAM=9:39266
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2307  0.0  0.7 345412 15220 ?        -    04:54   0:00 /usr/libexec/gsd-printer HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=566cba5dc3894a96bb8cb24542fd390b JOURNAL_STREAM=9:38323
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        2318  0.0  3.0 712260 61488 ?        -    04:54   0:00 /usr/libexec/evolution-data-server/evolution-alarm-notify LC_TIME=zh_CN.UTF-8 USER=seed LANGUAGE=zh_CN:en SSH_AGENT_PID=2101 XDG_SESSION_TYPE=x11 SHLVL=0 HOME=/home/seed DESKTOP_SESSION=ubuntu GIO_LAUNCHED_DESKTOP_FILE=/etc/xdg/autostart/org.gnome.Evolution-alarm-notify.desktop GTK_MODULES=gail:atk-bridge GNOME_SHELL_SESSION_MODE=ubuntu LC_MONETARY=zh_CN.UTF-8 MANAGERPID=1901 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus GIO_LAUNCHED_DESKTOP_FILE_PID=2318 IM_CONFIG_PHASE=1 LOGNAME=seed _=/usr/bin/dbus-update-activation-environment JOURNAL_STREAM=9:37355 DESKTOP_AUTOSTART_ID=10cdf9902c1312481165243206061031600000021360056 XDG_SESSION_CLASS=user USERNAME=seed GNOME_DESKTOP_SESSION_ID=this-is-deprecated WINDOWPATH=2 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin PAPERSIZE=a4 INVOCATION_ID=0159f35251d64b46b9310d42e8796e9f SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 LC_ADDRESS=zh_CN.UTF-8 XDG_RUNTIME_DIR=/run/user/1000 XDG_MENU_PREFIX=gnome- DISPLAY=:0 LANG=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=ubuntu:GNOME XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_SESSION_DESKTOP=ubuntu XMODIFIERS=@im=ibus SSH_AUTH_SOCK=/run/user/1000/keyring/ssh LC_NAME=zh_CN.UTF-8 SHELL=/bin/bash QT_ACCESSIBILITY=1 GDMSESSION=ubuntu LC_MEASUREMENT=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 QT_IM_MODULE=ibus PWD=/home/seed XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        2334  0.0  0.2 231792  5660 ?        -    04:54   0:00 /usr/libexec/gsd-disk-utility-notify LC_TIME=zh_CN.UTF-8 USER=seed LANGUAGE=zh_CN:en SSH_AGENT_PID=2101 XDG_SESSION_TYPE=x11 SHLVL=0 HOME=/home/seed DESKTOP_SESSION=ubuntu GIO_LAUNCHED_DESKTOP_FILE=/etc/xdg/autostart/org.gnome.SettingsDaemon.DiskUtilityNotify.desktop GTK_MODULES=gail:atk-bridge GNOME_SHELL_SESSION_MODE=ubuntu LC_MONETARY=zh_CN.UTF-8 MANAGERPID=1901 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus GIO_LAUNCHED_DESKTOP_FILE_PID=2334 IM_CONFIG_PHASE=1 LOGNAME=seed _=/usr/bin/dbus-update-activation-environment JOURNAL_STREAM=9:37355 DESKTOP_AUTOSTART_ID=10cdf9902c1312481165243206046012400000021360043 XDG_SESSION_CLASS=user USERNAME=seed GNOME_DESKTOP_SESSION_ID=this-is-deprecated WINDOWPATH=2 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin PAPERSIZE=a4 INVOCATION_ID=0159f35251d64b46b9310d42e8796e9f SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 LC_ADDRESS=zh_CN.UTF-8 XDG_RUNTIME_DIR=/run/user/1000 XDG_MENU_PREFIX=gnome- DISPLAY=:0 LANG=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=ubuntu:GNOME XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_SESSION_DESKTOP=ubuntu XMODIFIERS=@im=ibus SSH_AUTH_SOCK=/run/user/1000/keyring/ssh LC_NAME=zh_CN.UTF-8 SHELL=/bin/bash QT_ACCESSIBILITY=1 GDMSESSION=ubuntu LC_MEASUREMENT=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 QT_IM_MODULE=ibus PWD=/home/seed XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        2346  0.0  1.5 858596 31180 ?        -    04:54   0:00 /usr/libexec/evolution-calendar-factory HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=5b1267c2307e47cc97ec9444df2fb69b JOURNAL_STREAM=9:39773
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2390  0.0  0.5 320892 10944 ?        -    04:54   0:00 /usr/libexec/gvfsd-trash --spawner :1.3 /org/gtk/gvfs/exec_spaw/0 HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus MANAGERPID=1901 INVOCATION_ID=26446428ef7842bd901a728ffa955b2e JOURNAL_STREAM=9:34259
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        2406  0.0  0.4 169852  9296 ?        -    04:54   0:00 /usr/libexec/ibus-engine-simple HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment NOTIFY_SOCKET=/run/user/1000/systemd/notify MANAGERPID=1901 INVOCATION_ID=4b78749857c64bedb684e7dc75f9d68b JOURNAL_STREAM=9:37674 GJS_DEBUG_OUTPUT=stderr GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        2427  0.0  1.6 750876 33588 ?        -    04:54   0:00 /usr/libexec/evolution-addressbook-factory HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=0c0a234607524c469c0fd52aa1bf011a JOURNAL_STREAM=9:40148
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2492  0.6  3.7 1132584 76152 ?       -    04:54   0:11 /usr/libexec/gnome-terminal-server HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=f1a54bea15064a93b388b9af052117ff JOURNAL_STREAM=9:41577
+seed           -  0.5    -      -     - -        Ssl  04:54   0:11 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:54   0:00 -
+seed        2518  0.0  0.2  13960  5140 pts/0    -    04:54   0:00 bash GJS_DEBUG_TOPICS=JS ERROR;JS LOG SSH_AUTH_SOCK=/run/user/1000/keyring/ssh SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 PAPERSIZE=a4 GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/35372364_f7f7_49cc_9c1e_1c0d7374f437 LANGUAGE=zh_CN:en SSH_AGENT_PID=2101 LC_IDENTIFICATION=zh_CN.UTF-8 LANG=zh_CN.UTF-8 IM_CONFIG_PHASE=1 XDG_CURRENT_DESKTOP=ubuntu:GNOME COLORTERM=truecolor GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 QT_IM_MODULE=ibus USER=seed DESKTOP_SESSION=ubuntu XDG_MENU_PREFIX=gnome- HOME=/home/seed GJS_DEBUG_OUTPUT=stderr LC_MEASUREMENT=zh_CN.UTF-8 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus PWD=/home/seed LC_NUMERIC=zh_CN.UTF-8 _=/usr/bin/dbus-update-activation-environment GTK_MODULES=gail:atk-bridge WINDOWPATH=2 XDG_SESSION_DESKTOP=ubuntu JOURNAL_STREAM=9:37674 QT_ACCESSIBILITY=1 GNOME_DESKTOP_SESSION_ID=this-is-deprecated MANAGERPID=1901 LC_TIME=zh_CN.UTF-8 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop GNOME_TERMINAL_SERVICE=:1.97 LC_PAPER=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin XDG_RUNTIME_DIR=/run/user/1000 XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus GNOME_SHELL_SESSION_MODE=ubuntu LC_TELEPHONE=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 SHELL=/bin/bash VTE_VERSION=6003 USERNAME=seed INVOCATION_ID=4b78749857c64bedb684e7dc75f9d68b SHLVL=0 XAUTHORITY=/run/user/1000/gdm/Xauthority LC_NAME=zh_CN.UTF-8 DISPLAY=:0 TERM=xterm-256color LC_ADDRESS=zh_CN.UTF-8 XDG_SESSION_CLASS=user GDMSESSION=ubuntu
+seed           -  0.0    -      -     - -        Ss   04:54   0:00 -
+seed        2559  0.0  0.5 248392 10816 ?        -    04:54   0:00 /usr/lib/ibus/ibus-engine-libpinyin --ibus HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment NOTIFY_SOCKET=/run/user/1000/systemd/notify MANAGERPID=1901 INVOCATION_ID=4b78749857c64bedb684e7dc75f9d68b JOURNAL_STREAM=9:37674 GJS_DEBUG_OUTPUT=stderr GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:54   0:00 -
+seed        2576  0.0  0.3 165396  6344 ?        -    04:55   0:00 /usr/libexec/gvfsd-metadata HOME=/home/seed LANG=zh_CN.UTF-8 LC_ADDRESS=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 LC_MEASUREMENT=zh_CN.UTF-8 LC_MONETARY=zh_CN.UTF-8 LC_NAME=zh_CN.UTF-8 LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 LC_TIME=zh_CN.UTF-8 LOGNAME=seed PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin SHELL=/bin/bash USER=seed XDG_RUNTIME_DIR=/run/user/1000 GTK_MODULES=gail:atk-bridge QT_ACCESSIBILITY=1 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus DESKTOP_SESSION=ubuntu DISPLAY=:0 GDMSESSION=ubuntu GNOME_DESKTOP_SESSION_ID=this-is-deprecated GNOME_SHELL_SESSION_MODE=ubuntu GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 IM_CONFIG_PHASE=1 LANGUAGE=zh_CN:en PAPERSIZE=a4 PWD=/home/seed QT_IM_MODULE=ibus SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 SHLVL=0 SSH_AGENT_PID=2101 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh USERNAME=seed WINDOWPATH=2 XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_CURRENT_DESKTOP=ubuntu:GNOME XDG_MENU_PREFIX=gnome- XDG_SESSION_CLASS=user XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 XMODIFIERS=@im=ibus _=/usr/bin/dbus-update-activation-environment MANAGERPID=1901 INVOCATION_ID=1a56c837c02e410b98de0c9b45ac13ab JOURNAL_STREAM=9:42192
+seed           -  0.0    -      -     - -        Ssl  04:55   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:55   0:00 -
+seed           -  0.0    -      -     - -        Ssl  04:55   0:00 -
+seed        2579  0.0  1.7 446448 34792 ?        -    04:55   0:00 update-notifier LC_TIME=zh_CN.UTF-8 USER=seed LANGUAGE=zh_CN:en SSH_AGENT_PID=2101 XDG_SESSION_TYPE=x11 SHLVL=0 HOME=/home/seed DESKTOP_SESSION=ubuntu GIO_LAUNCHED_DESKTOP_FILE=/etc/xdg/autostart/update-notifier.desktop GTK_MODULES=gail:atk-bridge GNOME_SHELL_SESSION_MODE=ubuntu LC_MONETARY=zh_CN.UTF-8 MANAGERPID=1901 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus GIO_LAUNCHED_DESKTOP_FILE_PID=2579 IM_CONFIG_PHASE=1 LOGNAME=seed _=/usr/bin/dbus-update-activation-environment JOURNAL_STREAM=9:37355 DESKTOP_AUTOSTART_ID=10cdf9902c1312481165243206027993700000021360032 XDG_SESSION_CLASS=user USERNAME=seed GNOME_DESKTOP_SESSION_ID=this-is-deprecated WINDOWPATH=2 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin PAPERSIZE=a4 INVOCATION_ID=0159f35251d64b46b9310d42e8796e9f SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 LC_ADDRESS=zh_CN.UTF-8 XDG_RUNTIME_DIR=/run/user/1000 XDG_MENU_PREFIX=gnome- DISPLAY=:0 LANG=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=ubuntu:GNOME XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_SESSION_DESKTOP=ubuntu XMODIFIERS=@im=ibus SSH_AUTH_SOCK=/run/user/1000/keyring/ssh LC_NAME=zh_CN.UTF-8 SHELL=/bin/bash QT_ACCESSIBILITY=1 GDMSESSION=ubuntu LC_MEASUREMENT=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 QT_IM_MODULE=ibus PWD=/home/seed XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8
+seed           -  0.0    -      -     - -        Sl   04:55   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:55   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:55   0:00 -
+seed           -  0.0    -      -     - -        Sl   04:55   0:00 -
+seed        2648  0.5  7.5 1144136 153276 ?      -    04:55   0:09 /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map LC_TIME=zh_CN.UTF-8 USER=seed LANGUAGE=zh_CN:en SSH_AGENT_PID=2101 XDG_SESSION_TYPE=x11 SHLVL=0 HOME=/home/seed DESKTOP_SESSION=ubuntu GIO_LAUNCHED_DESKTOP_FILE=/etc/xdg/autostart/update-notifier.desktop GTK_MODULES=gail:atk-bridge GNOME_SHELL_SESSION_MODE=ubuntu LC_MONETARY=zh_CN.UTF-8 MANAGERPID=1901 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus GIO_LAUNCHED_DESKTOP_FILE_PID=2579 IM_CONFIG_PHASE=1 LOGNAME=seed _=/usr/bin/dbus-update-activation-environment JOURNAL_STREAM=9:37355 DESKTOP_AUTOSTART_ID=10cdf9902c1312481165243206027993700000021360032 XDG_SESSION_CLASS=user USERNAME=seed GNOME_DESKTOP_SESSION_ID=this-is-deprecated WINDOWPATH=2 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin PAPERSIZE=a4 INVOCATION_ID=0159f35251d64b46b9310d42e8796e9f SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 LC_ADDRESS=zh_CN.UTF-8 XDG_RUNTIME_DIR=/run/user/1000 XDG_MENU_PREFIX=gnome- DISPLAY=:0 LANG=zh_CN.UTF-8 LC_TELEPHONE=zh_CN.UTF-8 XDG_CURRENT_DESKTOP=ubuntu:GNOME XAUTHORITY=/run/user/1000/gdm/Xauthority XDG_SESSION_DESKTOP=ubuntu XMODIFIERS=@im=ibus SSH_AUTH_SOCK=/run/user/1000/keyring/ssh LC_NAME=zh_CN.UTF-8 SHELL=/bin/bash QT_ACCESSIBILITY=1 GDMSESSION=ubuntu LC_MEASUREMENT=zh_CN.UTF-8 LC_IDENTIFICATION=zh_CN.UTF-8 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 QT_IM_MODULE=ibus PWD=/home/seed XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg LC_NUMERIC=zh_CN.UTF-8 LC_PAPER=zh_CN.UTF-8
+seed           -  0.5    -      -     - -        SNl  04:55   0:09 -
+seed           -  0.0    -      -     - -        SNl  04:55   0:00 -
+seed           -  0.0    -      -     - -        SNl  04:55   0:00 -
+seed           -  0.0    -      -     - -        SNl  04:55   0:00 -
+seed           -  0.0    -      -     - -        SNl  04:55   0:00 -
+root        3034  0.0  0.0      0     0 ?        -    05:04   0:00 [kworker/u4:2-events_power_efficient]
+root           -  0.0    -      -     - -        I    05:04   0:00 -
+root        3538  0.0  0.0      0     0 ?        -    05:13   0:00 [kworker/1:0-cgroup_destroy]
+root           -  0.0    -      -     - -        I    05:13   0:00 -
+root        3554  0.0  0.0      0     0 ?        -    05:13   0:00 [kworker/0:1-events]
+root           -  0.0    -      -     - -        I    05:13   0:00 -
+root        3555  0.0  0.0      0     0 ?        -    05:14   0:00 [kworker/u4:1-events_power_efficient]
+root           -  0.0    -      -     - -        I    05:14   0:00 -
+root        3595  0.0  0.0      0     0 ?        -    05:18   0:00 [kworker/0:2-events]
+root           -  0.0    -      -     - -        I    05:18   0:00 -
+root        3601  0.0  0.0      0     0 ?        -    05:19   0:00 [kworker/u4:0-events_unbound]
+root           -  0.0    -      -     - -        I    05:19   0:00 -
+root        3659  0.0  0.0      0     0 ?        -    05:23   0:00 [kworker/1:1-cgroup_destroy]
+root           -  0.0    -      -     - -        I    05:23   0:00 -
+root        3664  0.0  0.0      0     0 ?        -    05:23   0:00 [kworker/u4:3-events_unbound]
+root           -  0.0    -      -     - -        I    05:23   0:00 -
+seed        3666  0.0  0.1  14580  3236 pts/0    -    05:26   0:00 ps auxwwem SHELL=/bin/bash SESSION_MANAGER=local/VM:@/tmp/.ICE-unix/2136,unix/VM:/tmp/.ICE-unix/2136 QT_ACCESSIBILITY=1 COLORTERM=truecolor XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg XDG_MENU_PREFIX=gnome- GNOME_DESKTOP_SESSION_ID=this-is-deprecated PKG_CONFIG_PATH=/usr/local/opt/openssl@1/lib/pkgconfig LANGUAGE=zh_CN:en LC_ADDRESS=zh_CN.UTF-8 GNOME_SHELL_SESSION_MODE=ubuntu LC_NAME=zh_CN.UTF-8 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh XMODIFIERS=@im=ibus DESKTOP_SESSION=ubuntu LC_MONETARY=zh_CN.UTF-8 SSH_AGENT_PID=2101 GTK_MODULES=gail:atk-bridge PWD=/etc LOGNAME=seed XDG_SESSION_DESKTOP=ubuntu XDG_SESSION_TYPE=x11 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1 XAUTHORITY=/run/user/1000/gdm/Xauthority GJS_DEBUG_TOPICS=JS ERROR;JS LOG WINDOWPATH=2 LDFLAGS=-L/uer/local/opt/openssl@1/lib HOME=/home/seed USERNAME=seed IM_CONFIG_PHASE=1 LC_PAPER=zh_CN.UTF-8 LANG=zh_CN.UTF-8 LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36: XDG_CURRENT_DESKTOP=ubuntu:GNOME VTE_VERSION=6003 GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/35372364_f7f7_49cc_9c1e_1c0d7374f437 CPPFLAGS=-l/usr/local/opt/openssl@1/incude INVOCATION_ID=4b78749857c64bedb684e7dc75f9d68b MANAGERPID=1901 GJS_DEBUG_OUTPUT=stderr LESSCLOSE=/usr/bin/lesspipe %s %s XDG_SESSION_CLASS=user TERM=xterm-256color LC_IDENTIFICATION=zh_CN.UTF-8 LESSOPEN=| /usr/bin/lesspipe %s USER=seed GNOME_TERMINAL_SERVICE=:1.97 DISPLAY=:0 SHLVL=1 LC_TELEPHONE=zh_CN.UTF-8 QT_IM_MODULE=ibus LC_MEASUREMENT=zh_CN.UTF-8 PAPERSIZE=a4 XDG_RUNTIME_DIR=/run/user/1000 LC_TIME=zh_CN.UTF-8 JOURNAL_STREAM=9:37674 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop PATH=/usr/local/zeek/bin:/usr/local/opt/openssl@1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:. GDMSESSION=ubuntu DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus LC_NUMERIC=zh_CN.UTF-8 _=/usr/bin/ps OLDPWD=/home/seed
+seed           -  0.0    -      -     - -        R+   05:26   0:00 -
+
+
+
